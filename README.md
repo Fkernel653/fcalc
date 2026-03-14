@@ -37,7 +37,7 @@ cd Fcalc
 
 2. Install the required dependency:
 ```bash
-pip install -r requirements.txt
+pip install customtkinter
 ```
 
 3. Run the calculator:
@@ -55,9 +55,9 @@ python main.py
 ```
 python-calculator/
 │
-├── main.py           # Main calculator application
-├── README.md         # Project documentation
-└── screenshot.png    # Application screenshot
+|── main.py           # Main calculator application
+|── README.md         # Project documentation
+|── screenshot.png    # Application screenshot
 ```
 
 ## Code Overview
@@ -72,8 +72,8 @@ The calculator is built using object-oriented programming principles:
 ## Error Messages
 
 The calculator displays user-friendly error messages:
-- `Ошибка синтаксиса` - For invalid mathematical expressions
-- `Ошибка: деление на ноль` - When attempting to divide by zero
+- `Syntax error` - For invalid mathematical expressions
+- `Error: division by zero` - When attempting to divide by zero
 
 ## Customization
 
