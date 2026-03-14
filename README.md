@@ -72,8 +72,8 @@ The calculator is built using object-oriented programming principles:
 ## Error Messages
 
 The calculator displays user-friendly error messages:
-- `Syntax error` - For invalid mathematical expressions
-- `Error: division by zero` - When attempting to divide by zero
+- `Error: The syntax is incorrect` - For invalid mathematical expressions
+- `Error: Division by zero` - When attempting to divide by zero
 
 ## Customization
 
