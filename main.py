@@ -288,12 +288,12 @@ class Calc(customtkinter.CTk):
             except SyntaxError:
                 # Handle syntax errors
                 self.display.delete(0, 'end')
-                self.display.insert(0, 'Ошибка синтаксиса')
+                self.display.insert(0, 'Syntax error')
 
             except ZeroDivisionError:
                 # Handle division by zero
                 self.display.delete(0, 'end')
-                self.display.insert(0, 'Ошибка: деление на ноль')  
+                self.display.insert(0, 'Error: division by zero')  
 
         else:
             self.display.insert(0, '')
