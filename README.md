@@ -81,7 +81,7 @@ You can easily customize the calculator by modifying:
 
 - **Window size**: Change `self.geometry('500x600')`
 - **Colors**: Modify `fg_color` parameters for buttons
-- **Font**: Adjust font families and sizes in button configurations
+- **Font**: Change `self.font_family` and `self.font_size`
 - **Appearance**: Change `_set_appearance_mode()` parameter to 'light', 'dark', or 'system'
 
 ## Contributing
