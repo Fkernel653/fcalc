@@ -1,3 +1,4 @@
+# Style Dracula
 class Dracula:
     def __init__(self):
         self.background = "#282A36"
