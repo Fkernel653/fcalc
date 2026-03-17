@@ -10,7 +10,7 @@ A modern desktop calculator application built with Python and CustomTkinter libr
 - **Decimal numbers support**
 - **Keyboard input support** for all operations
 - **Error handling** for syntax errors and division by zero
-- **Modern UI** with system appearance mode (light/dark theme)
+- **Modern UI** with system appearance mode (Dracula theme)
 - **Responsive design** with grid-based button layout
 
 ## Keyboard Shortcuts
@@ -56,6 +56,7 @@ python main.py
 python-calculator/
 │
 |── main.py           # Main calculator application
+|── style.py          # Main style
 |── README.md         # Project documentation
 |── screenshot.png    # Application screenshot
 ```
@@ -80,9 +81,9 @@ The calculator displays user-friendly error messages:
 You can easily customize the calculator by modifying:
 
 - **Window size**: Change `self.geometry('500x600')`
-- **Colors**: Modify `fg_color` parameters for buttons
-- **Font**: Change `self.font_family` and `self.font_size`
-- **Appearance**: Change `_set_appearance_mode()` parameter to 'light', 'dark', or 'system'
+- **Colors**: Modify style Dracula for buttons and menu
+- **Font**: Change class `Button`
+- **Appearance**: Change `self.configure()` to change the background
 
 ## Contributing
 
