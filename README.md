@@ -109,15 +109,6 @@ This project is open source and available under the [MIT License](LICENSE).
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) library for modern UI widgets
 - Python community for excellent documentation and support
 
-## Future Enhancements
-
-- [ ] Add memory functions (M+, M-, MR, MC)
-- [ ] Implement percentage calculations
-- [ ] Add square root and power functions
-- [ ] Include calculation history
-- [ ] Add themes support
-- [ ] Create unit tests
-
 ---
 
 If you find this project helpful, please give it a ⭐ on GitHub!
