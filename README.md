@@ -31,8 +31,8 @@ A modern desktop calculator application built with Python and CustomTkinter libr
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Fkernel653/Fcalc.git
-cd Fcalc
+git clone https://github.com/Fkernel653/fcalc.git
+cd fcalc
 ```
 
 2. Install the required dependency:
