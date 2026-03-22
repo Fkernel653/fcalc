@@ -1,5 +1,5 @@
-from style import Dracula
 import customtkinter
+import style
 
 
 class Button(customtkinter.CTkButton):
@@ -16,11 +16,9 @@ class Button(customtkinter.CTkButton):
 class Calc(customtkinter.CTk):
     def __init__(self):
         super().__init__()
-        style = Dracula()
-
         self.title("")
         self.geometry("500x600")
-        self._set_appearance_mode("system")
+        # self._set_appearance_mode("system")       # You can uncomment and style.comment self.configure
         self.configure(fg_color=style.background)
 
         # Create display entry widget (read-only)
