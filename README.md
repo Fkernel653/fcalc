@@ -53,12 +53,11 @@ python main.py
 ## Project Structure
 
 ```
-python-calculator/
-│
-|── main.py           # Main calculator application
-|── style.py          # Main style
-|── README.md         # Project documentation
-|── screenshot.png    # Application screenshot
+fcalc/
+├── main.py           # Main calculator application
+├── style.py          # Main style
+├── README.md         # Project documentation
+└── screenshot.png    # Application screenshot
 ```
 
 ## Code Overview
