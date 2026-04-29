@@ -1,5 +1,5 @@
 import customtkinter
-import style
+from style import BACKGROUND, COMMENT, FOREGROUND, PINK, PURPLE, RED, SELECTION
 
 
 class Button(customtkinter.CTkButton):
@@ -18,7 +18,7 @@ class Calc(customtkinter.CTk):
         super().__init__()
         self.title("")
         self.geometry("500x600")
-        self.configure(fg_color=style.background)
+        self.configure(fg_color=BACKGROUND)
 
         # Display
         self.display = customtkinter.CTkEntry(
@@ -26,13 +26,13 @@ class Calc(customtkinter.CTk):
             state="disabled",
             font=("Arial", 20),
             height=70,
-            fg_color=style.selection,
-            text_color=style.foreground,
+            fg_color=SELECTION,
+            text_color=FOREGROUND,
         )
         self.display.pack(padx=20, pady=20, fill="x")
 
         # Button frame
-        self.button_frame = customtkinter.CTkFrame(self, fg_color=style.background)
+        self.button_frame = customtkinter.CTkFrame(self, fg_color=BACKGROUND)
         self.button_frame.pack(pady=10, padx=20, fill="both", expand=True)
 
         for i in range(4):
@@ -42,34 +42,31 @@ class Calc(customtkinter.CTk):
 
         # Button configuration
         buttons = {
-            "AC": (0, 0, style.red),
-            "DEL": (0, 1, style.comment),
-            "/": (0, 2, style.pink),
-            "*": (0, 3, style.pink),
-            "7": (1, 0, style.selection),
-            "8": (1, 1, style.selection),
-            "9": (1, 2, style.selection),
-            "-": (1, 3, style.pink),
-            "4": (2, 0, style.selection),
-            "5": (2, 1, style.selection),
-            "6": (2, 2, style.selection),
-            "+": (2, 3, style.pink),
-            "1": (3, 0, style.selection),
-            "2": (3, 1, style.selection),
-            "3": (3, 2, style.selection),
-            "=": (3, 3, style.purple),
-            "0": (4, 0, style.selection),
-            ".": (4, 1, style.selection),
+            "AC": (0, 0, RED),
+            "DEL": (0, 1, COMMENT),
+            "/": (0, 2, PINK),
+            "*": (0, 3, PINK),
+            "7": (1, 0, SELECTION),
+            "8": (1, 1, SELECTION),
+            "9": (1, 2, SELECTION),
+            "-": (1, 3, PINK),
+            "4": (2, 0, SELECTION),
+            "5": (2, 1, SELECTION),
+            "6": (2, 2, SELECTION),
+            "+": (2, 3, PINK),
+            "1": (3, 0, SELECTION),
+            "2": (3, 1, SELECTION),
+            "3": (3, 2, SELECTION),
+            "=": (3, 3, PURPLE),
+            "0": (4, 0, SELECTION),
+            ".": (4, 1, SELECTION),
         }
 
         for text, (row, col, color) in buttons.items():
             btn = Button(
-                self.button_frame,
-                text,
-                lambda t=text: self.handle_input(t),
-                color
+                self.button_frame, text, lambda t=text: self.handle_input(t), color
             )
-            
+
             # Special sizing for equals button
             if text == "=":
                 btn.grid(row=row, column=col, rowspan=2, padx=5, pady=5, sticky="nsew")
@@ -92,22 +89,37 @@ class Calc(customtkinter.CTk):
     def key_press(self, event):
         """Handle keyboard input"""
         key_map = {
-            "0": "0", "1": "1", "2": "2", "3": "3", "4": "4",
-            "5": "5", "6": "6", "7": "7", "8": "8", "9": "9",
-            "+": "+", "-": "-", "*": "*", "/": "/", ".": ".",
-            "=": "=", "Return": "=", "BackSpace": "DEL", "Escape": "AC"
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "+": "+",
+            "-": "-",
+            "*": "*",
+            "/": "/",
+            ".": ".",
+            "=": "=",
+            "Return": "=",
+            "BackSpace": "DEL",
+            "Escape": "AC",
         }
-        
+
         if event.char in key_map or event.keysym in key_map:
             self.handle_input(key_map.get(event.char) or key_map.get(event.keysym))
 
     def input(self, sign):
         """Add input to display"""
         self.display.configure(state="normal")
-        
+
         if "Error" in self.display.get():
             self.display.delete(0, "end")
-            
+
         self.display.insert("end", str(sign))
         self.display.configure(state="disabled")
 
@@ -115,7 +127,7 @@ class Calc(customtkinter.CTk):
         """Delete last character"""
         self.display.configure(state="normal")
         cursor_position = self.display.index("insert")
-        
+
         if cursor_position > 0:
             self.display.delete(cursor_position - 1, cursor_position)
         self.display.configure(state="disabled")
