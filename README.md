@@ -54,10 +54,8 @@ git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 pdm install
 ```
 
-## Requirements
-
-- Python 3.6 or higher
-- customtkinter library
+### Prerequisites
+- Python 3.14+ & CustomTkinter library
 
 ## Project Structure
 
