@@ -75,7 +75,7 @@ python main.py
 ```
 fcalc/
 ├── main.py           # Main calculator application
-├── style.py          # Main style (Dracula theme)
+├── style.py          # Main style (Dracula colors)
 ├── pyproject.toml    # Project metadata and dependencies
 ├── README.md         # Project documentation
 └── screenshot.png    # Application screenshot
