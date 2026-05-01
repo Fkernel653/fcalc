@@ -1,4 +1,4 @@
-# fcalc is a simple, stylish GUI calculator
+# fcalc is a simple, colorful offline calculator based on the CustomTkinter library 
 
 A modern desktop calculator application built with Python and CustomTkinter library. This calculator features a clean, intuitive interface with both mouse and keyboard support.
 

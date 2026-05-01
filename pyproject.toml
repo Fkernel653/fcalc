@@ -1,7 +1,7 @@
 [project]
 name = "fсalc"
 version = "2.0.0"
-description = "fcalc is a simple, stylish GUI calculator"
+description = "fcalc is a simple, colorful offline calculator based on the CustomTkinter library "
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
