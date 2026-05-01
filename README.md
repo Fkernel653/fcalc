@@ -1,32 +1,29 @@
-# fcalc is a simple, colorful offline calculator based on the CustomTkinter library 
+# fcalc is a simple, colorful offline calculator based on the CustomTkinter library
 
-A modern desktop calculator application built with Python and CustomTkinter library. This calculator features a clean, intuitive interface with both mouse and keyboard support.
-
-![Calculator Screenshot](screenshot.png)
+[![Python](https://img.shields.io/badge/python-3.14+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
+[![CustomTkinter](https://img.shields.io/badge/UI-customtkinter-1a6eae)](https://github.com/TomSchimansky/CustomTkinter)
 [![Ruff](https://img.shields.io/badge/code%20style-ruff-261230?logo=ruff&logoColor=white)](https://docs.astral.sh/ruff/)
 
-## Features
+A modern desktop calculator application built with Python and CustomTkinter. Features a clean, intuitive interface with both mouse and keyboard support, styled with a Dracula theme.
 
-- **Basic arithmetic operations**: addition (+), subtraction (-), multiplication (*), division (/)
+![Calculator Screenshot](screenshot.png)
+
+## ✨ Features
+
+- **Basic arithmetic operations** — addition (+), subtraction (-), multiplication (*), division (/)
 - **Decimal numbers support**
-- **Keyboard input support** for all operations
-- **Error handling** for syntax errors and division by zero
-- **Modern UI** with system appearance mode (Dracula theme)
-- **Responsive design** with grid-based button layout
+- **Keyboard input** — full control without touching the mouse
+- **Error handling** — clear messages for syntax errors and division by zero
+- **Modern UI** — Dracula theme with system appearance mode
+- **Responsive design** — grid-based button layout that scales cleanly
+- **Offline** — no internet required, works entirely locally
 
-## Keyboard Shortcuts
+## 🚀 Quick Start
 
-| Key | Function |
-|-----|----------|
-| `0-9` | Input numbers |
-| `+` | Addition |
-| `-` | Subtraction |
-| `*` | Multiplication |
-| `/` | Division |
-| `.` | Decimal point |
-| `=` or `Enter` | Calculate result |
-| `Backspace` | Delete last character |
-| `Escape` | Clear all (AC) |
+### Prerequisites
+- Python 3.14+ & CustomTkinter library
 
 ### Installation
 
@@ -54,45 +51,71 @@ git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 pdm install
 ```
 
-### Prerequisites
-- Python 3.14+ & CustomTkinter library
+### Usage
+```bash
+python main.py
+```
 
-## Project Structure
+## ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `0-9` | Input numbers |
+| `+` | Addition |
+| `-` | Subtraction |
+| `*` | Multiplication |
+| `/` | Division |
+| `.` | Decimal point |
+| `=` or `Enter` | Calculate result |
+| `Backspace` | Delete last character |
+| `Escape` | Clear all (AC) |
+
+## 📁 Project Structure
 
 ```
 fcalc/
 ├── main.py           # Main calculator application
-├── style.py          # Main style
+├── style.py          # Main style (Dracula theme)
 ├── pyproject.toml    # Project metadata and dependencies
 ├── README.md         # Project documentation
 └── screenshot.png    # Application screenshot
 ```
 
-## Code Overview
+## 🔧 Requirements
+
+| Package | Purpose |
+|---------|---------|
+| `customtkinter` | Modern themed Tkinter widgets |
+| `tkinter` | Built-in GUI framework (ships with Python) |
+
+## 📘 Code Overview
 
 The calculator is built using object-oriented programming principles:
 
-- **Calc class**: Main application class inheriting from `customtkinter.CTk`
-- **UI Components**: Buttons, display entry, and frame layout
-- **Event Handlers**: Keyboard and mouse input processing
-- **Calculation Engine**: Uses Python's `eval()` for expression evaluation with error handling
+- **Calc class** — Main application class inheriting from `customtkinter.CTk`
+- **UI Components** — Buttons, display entry, and frame layout
+- **Event Handlers** — Keyboard and mouse input processing
+- **Calculation Engine** — Uses Python's `eval()` with error handling
 
-## Error Messages
+## ⚠️ Error Messages
 
 The calculator displays user-friendly error messages:
-- `Error: The syntax is incorrect` - For invalid mathematical expressions
-- `Error: Division by zero` - When attempting to divide by zero
 
-## Customization
+| Error | Message |
+|-------|---------|
+| Invalid syntax | `Error: The syntax is incorrect` |
+| Division by zero | `Error: Division by zero` |
+
+## 🎨 Customization
 
 You can easily customize the calculator by modifying:
 
-- **Window size**: Change `self.geometry('500x600')`
-- **Colors**: Modify style Dracula for buttons and menu
-- **Font**: Change class `Button`
-- **Appearance**: Change `self.configure()` to change the background
+- **Window size** — Change `self.geometry("500x600")` in `main.py`
+- **Theme** — Modify the Dracula color palette in `style.py`
+- **Font** — Adjust the `Button` class font settings
+- **Background** — Change `self.configure()` in the main window
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -103,18 +126,17 @@ Contributions are welcome! Feel free to:
 5. Push to the branch (`git push origin feature/improvement`)
 6. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Author
+## 👤 Author
 
-**Fkernel653** - [GitHub Profile](https://github.com/Fkernel653)
+**Fkernel653** — [GitHub](https://github.com/Fkernel653)
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) library for modern UI widgets
-- Python community for excellent documentation and support
+- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — Modern Tkinter widget library
 
 ---
 
