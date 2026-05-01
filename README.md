@@ -1,8 +1,9 @@
-# Python Calculator with GUI
+# fcalc is a simple, stylish GUI calculator
 
 A modern desktop calculator application built with Python and CustomTkinter library. This calculator features a clean, intuitive interface with both mouse and keyboard support.
 
 ![Calculator Screenshot](screenshot.png)
+[![Ruff](https://img.shields.io/badge/code%20style-ruff-261230?logo=ruff&logoColor=white)](https://docs.astral.sh/ruff/)
 
 ## Features
 
@@ -27,22 +28,30 @@ A modern desktop calculator application built with Python and CustomTkinter libr
 | `Backspace` | Delete last character |
 | `Escape` | Clear all (AC) |
 
-## Installation
+### Installation
 
-1. Clone the repository:
+**uv** (recommended)
 ```bash
-git clone https://github.com/Fkernel653/fcalc.git
-cd fcalc
+git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
+uv sync
 ```
 
-2. Install the required dependency:
+**pip**
 ```bash
-pip install customtkinter
+git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
+pip install .
 ```
 
-3. Run the calculator:
+**Poetry**
 ```bash
-python main.py
+git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
+poetry install
+```
+
+**PDM**
+```bash
+git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
+pdm install
 ```
 
 ## Requirements
@@ -56,6 +65,7 @@ python main.py
 fcalc/
 ├── main.py           # Main calculator application
 ├── style.py          # Main style
+├── pyproject.toml    # Project metadata and dependencies
 ├── README.md         # Project documentation
 └── screenshot.png    # Application screenshot
 ```
