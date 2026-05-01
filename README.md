@@ -130,14 +130,11 @@ Contributions are welcome! Feel free to:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
-
-**Fkernel653** — [GitHub](https://github.com/Fkernel653)
-
 ## 🙏 Acknowledgments
 
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — Modern Tkinter widget library
 
 ---
 
-If you find this project helpful, please give it a ⭐ on GitHub!
+**Author:** [Fkernel653](https://github.com/Fkernel653)  
+**Repository:** [github.com/Fkernel653/fcalc](https://github.com/Fkernel653/fcalc)
