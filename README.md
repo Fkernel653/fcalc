@@ -20,6 +20,10 @@ A modern desktop calculator application built with Python and CustomTkinter. Fea
 - **Responsive design** — grid-based button layout that scales cleanly
 - **Offline** — no internet required, works entirely locally
 
+Вижу, вы собираете README-секцию Quick Start. Вот структурированный вариант с вашими правками:
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -27,31 +31,36 @@ A modern desktop calculator application built with Python and CustomTkinter. Fea
 
 ### Installation
 
+#### 1. Clone Repository
+
+```bash
+git clone -b customtk https://github.com/Fkernel653/fcalc.git && cd fcalc
+```
+
+#### 2. Install Dependencies
+
 **uv** (recommended)
 ```bash
-git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 uv sync
 ```
 
 **pip**
 ```bash
-git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 pip install .
 ```
 
 **Poetry**
 ```bash
-git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 poetry install
 ```
 
 **PDM**
 ```bash
-git clone https://github.com/Fkernel653/fcalc.git && cd fcalc
 pdm install
 ```
 
 ### Usage
+
 ```bash
 python main.py
 ```
