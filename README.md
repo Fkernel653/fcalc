@@ -1,6 +1,6 @@
 # fcalc is a simple, colorful offline calculator based on the CustomTkinter library
 
-[![Python](https://img.shields.io/badge/python-3.14+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
 [![CustomTkinter](https://img.shields.io/badge/UI-customtkinter-1a6eae)](https://github.com/TomSchimansky/CustomTkinter)
@@ -27,7 +27,7 @@ A modern desktop calculator application built with Python and CustomTkinter. Fea
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.14+ & CustomTkinter library
+- Python 3.10+ & CustomTkinter library
 
 ### Installation
 

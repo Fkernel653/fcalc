@@ -3,7 +3,7 @@ name = "fсalc"
 version = "2.0.0"
 description = "fcalc is a simple, colorful offline calculator based on the CustomTkinter library "
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 dependencies = [
     "customtkinter"
 ]
